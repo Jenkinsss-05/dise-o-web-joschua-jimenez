@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-image: url('Fondo boostrap.png'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#banner h1 {
+    font-size: 3em;
+}
+
+#banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+.btn-secondary {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Efecto de profundidad con background-blend-mode */
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 768px) {
+    #banner {
+        height: 300px;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+    }
+
+    #banner p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

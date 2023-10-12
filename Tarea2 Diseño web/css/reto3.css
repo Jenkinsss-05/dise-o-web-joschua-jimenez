@@ -1,0 +1,78 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to bottom, #3a60be, #0650ff);
+    padding: 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3em; 
+}
+
+.interactive-section {
+    text-align: center;
+    padding: 5% 12%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-item {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3a60be;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e59dda1;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilo del ultimo boton*/
+
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3a60be;
+    color: white;
+    text-decoration: none;  /* Quitar el subrayado del enlace */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+}
+
+.back-button:hover {
+    background-color: #3e59dd;
+}
