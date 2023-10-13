@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>reto10</title>
+    <link rel="stylesheet" href="css/reto10.css">
+</head>
+<body>
+
+    <header>
+        <h1>Articulo destacado de la semana</h1>
+        <button class="read-more-button" onclick="mostrarTextoOculto()">Leer más</button>
+        <div id="texto-oculto" class="hidden">
+            <p>El hito para la industria aeroespacial que ha supuesto el lanzamiento del cohete Miura 1 desde Huelva ha centrado, sin lugar a dudas, la actualidad del día. Igualmente, el cierre de cinco establecimientos de copas en Huelva por las diversas infracciones, el Premio Arquitectura del COAH para la casa estudio de Galaroza, la llegada del crucero de lujo Island Sky y los buenos datos de Huelva en cuanto a pernoctaciones en campings durante agosto, han sido otras de las noticias centrales del sábado.</p>
+        </div>
+    </header>
+<main>
+    <section id="seccion1" class="gray-box">
+        <img src="Imagenes/covidblog1.png" alt="Imagen 1">
+        <div class="content">
+            <h2>"Avances en la distribución global de vacunas contra la COVID-19"
+            </h2>
+            <p>Contenido:
+                A medida que avanzamos en la lucha contra la pandemia de COVID-19, se han producido avances significativos en la distribución de vacunas a nivel mundial. Varios países han intensificado sus campañas de vacunación, alcanzando hitos importantes en términos de dosis administradas. Además, se ha observado un aumento en la colaboración internacional para garantizar un acceso equitativo a las vacunas, especialmente en regiones con recursos limitados.
+                
+                Organizaciones como la OMS (Organización Mundial de la Salud) y COVAX han desempeñado un papel crucial en la facilitación de la distribución de vacunas a países que enfrentan desafíos logísticos y financieros. A pesar de estos avances, persisten desafíos en la inmunización global, como la variabilidad en las tasas de vacunación entre diferentes regiones y la aparición de nuevas variantes del virus.
+                
+                Se insta a la comunidad internacional a mantener la colaboración y a abordar las disparidades en la distribución de vacunas para superar colectivamente la pandemia y reducir su impacto en la salud pública y la economía global</p>
+            <button class="green-button" onclick="descargarPDF('pdf/covid-19.pdf')">Descargar PDF</button>
+        </div>
+    </section>
+
+    <section id="seccion2" class="gray-box">
+        <img src="Imagenes/reto10blog2.png" alt="foto 2">
+        <div class="content">
+            <h2>Futbol de luto</h2>
+            <p>El equipo de fútbol brasileño Chapecoense sufrió una tragedia devastadora el 28 de noviembre de 2016. El equipo estaba viajando a Medellín, Colombia, para disputar la final de la Copa Sudamericana contra el equipo colombiano Atlético Nacional. Sin embargo, el vuelo chárter que transportaba al equipo se estrelló en las montañas cerca de Medellín.
+
+                El accidente aéreo resultó en la pérdida de la mayoría de los jugadores del Chapecoense, así como de miembros del personal técnico y periodistas que viajaban con el equipo. De las 77 personas a bordo, solo seis sobrevivieron. Este trágico incidente conmocionó al mundo del fútbol y generó una gran tristeza en la comunidad deportiva global.
+                
+                La causa del accidente fue atribuida a la falta de combustible en el avión, un hecho que llevó a una investigación exhaustiva sobre las circunstancias del vuelo. La tragedia tuvo un impacto significativo en el fútbol brasileño y en la solidaridad internacional, con numerosas muestras de apoyo y condolencias hacia el Chapecoense y las familias afectadas</p>
+            <button class="green-button" onclick="descargarPDF('pdf/Accidente del Chapecoense_.pdf')">Descargar PDF</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="reto9.html" class="button">ir a pagina 9</a>
+    <p>&copy; 2023 joschua jimenez</p>
+</footer>
+
+<script>
+    function descargarPDF(archivo) {
+        window.open(archivo, '_blank');
+    }
+</script>
+<script src="js/reto10.js"></script>
+
+
+</body>
+</html>
