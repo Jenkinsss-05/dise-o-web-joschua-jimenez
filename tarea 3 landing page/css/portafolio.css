@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tattoo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.tattoo-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tattoo-card:hover {
+    transform: scale(1.05);
+}
+
+.tattoo-card img {
+    max-width: 100%;
+    height: auto;
+}
