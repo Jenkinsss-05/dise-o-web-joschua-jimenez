@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick-theme.css"/>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick-theme.css"/>
+    <!--Slick y jQuery-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+
+    <!--TIPOGRAFIA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,400;1,500&family=Kanit:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+
+    <title>Óptica Santiago</title>
+    <link rel="stylesheet" href="css/full.css">
+    <link rel="stylesheet" href="css/reglas.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+      #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(21, 202, 172, 0.648);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+}
+
+#scrollTopBtn img {
+    width: 24px;  
+    height: auto;  
+}
+        .video-section {
+            position: relative;
+            z-index: 0; 
+        }
+
+        .navbar {
+            position: relative;
+            z-index: 2; 
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                z-index: 1; 
+            }
+
+            .menu.active li {
+                margin: 0;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .carrousel {
+                z-index: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <button id="scrollTopBtn" onclick="topFunction()">
+        <img src="img/lentes.png" alt="Scroll To Top">
+    </button>
+<!-- Barra de navegación -->
+<nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span class="icon">&#9776;</span>
+    </div>
+    <div class="logo">
+        <img src="img/opticalogo.png" alt="Logo de Óptica Visión" style="width: 80px; height: auto;">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="sol.html">Aros de sol</a></li>
+            <li><a href="lentecontacto.html">Lentes de contacto</a></li>
+            <li><a href="niños.html">Niños</a></li>
+            <li><a href="examen.html">Examenes</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="carrousel">
+    <div class="conteCarrousel">
+        <div class="itemCarrousel" id="itemCarrousel-1">
+            <img src="img/carrousel1.png.png" alt="Imagen 1">
+            <div class="itemCarrouselTarjeta"></div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-3">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-2">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-2">
+            <img src="img/2.png" alt="Imagen 2">
+            <div class="itemCarrouselTarjeta"></div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-1">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-3">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-3">
+            <img src="img/3.png" alt="Imagen 3">
+            <div class="itemCarrouselTarjeta"></div>
+            <div class="itemCarrouselArrows">
+                <a href="#itemCarrousel-2">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#itemCarrousel-1">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="conteCarrouselController">
+        <a href="#itemCarrousel-1">•</a>
+        <a href="#itemCarrousel-2">•</a>
+        <a href="#itemCarrousel-3">•</a>
+    </div>
+</div>
+<!--CARROUSEL DE LOGOS-->
+<div class="icon-container wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+    <div class="icon-box">
+        <img src="img/logo1.png" alt="Icono 1" style="width: 100px; height: 100px;">
+    </div>
+    <div class="icon-box">
+        <img src="img/logo2.png" alt="Icono 2" style="width: 100px; height: 100px;">
+    </div>
+    <div class="icon-box">
+        <img src="img/logo3.png" alt="Icono 3" style="width: 100px; height: 100px;">
+    </div>
+    <div class="icon-box">
+        <img src="img/logo4.png" alt="Icono 4" style="width: 100px; height: 100px;">
+    </div>
+</div>
+
+<!-- VIDEO DE FONDO -->
+<div class="video-section">
+    <div class="video-content">
+        <video autoplay muted loop id="video-background">
+            <source src="video/pexels-koolshooters-7322712 (Original).mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="social-icons-over-video">
+            <a href="https://www.facebook.com/tupagina" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tupagina" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/tunumerodetelefono" target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</div>
+<!--GOOGLE MAP-->
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60272.88412989109!2d-84.29127507586627!3d9.815131753446952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1ab29142a94e5%3A0xb99cb562dbe6b531!2sParque%20del%20Agricultor%20Puriscal!5e0!3m2!1ses-419!2scr!4v1701832408051!5m2!1ses-419!2scr"
+    width="100%" 
+    height="450" 
+    style="border:0; max-width: 100%;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+
+
+
+
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer-left">
+        <!-- ILUSTRACION-->
+        <img src="Optical shop-bro.png" alt="Ilustración">
+    </div>
+    <button class="back-button" onclick="window.location.href='contacto.html'">Contácto</button>
+
+    <div class="footer-right">
+        <!-- CUADRO DE TIPO DE PAGOS -->
+        <div class="payment-icons">
+            <img src="img/visa.png" alt="Visa">
+            <img src="img/tarjeta.png" alt="Mastercard">
+            <img src="img/paypal.png" alt="PayPal">
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/full.js"></script>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+<!--GOOGLE MAPS-->
+<script>
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    }
+</script>
+</body>
+</html>

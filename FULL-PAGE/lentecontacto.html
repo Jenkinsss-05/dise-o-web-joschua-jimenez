@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/lentecontacto.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Opciones de Lentes de Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/lentecontacto.css">
+    <!--ANIMATE.CSS-->
+    <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
+      
+</head>
+<body>
+    <div class="banner">
+        <img src="img/bannerlente1.png" alt="Banner de lentes de contacto">
+        <a href="full_page.html" class="back-button">Volver</a>
+    </div>
+
+
+
+    
+    <section class="lentes-cards">
+   
+        
+        <div class="lente-card wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s" onclick="abrirLightbox('img/Lentecontacto2.png')">
+            <img src="img/Lentecontacto2.png" alt="Lente de contacto 2">
+            <h3>Air Optix</h3>
+            <p>¢80.000</p>
+        </div>
+    
+        <div class="lente-card wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s" onclick="abrirLightbox('img/lentecontacto3.png')">
+            <img src="img/lentecontacto3.png" alt="Lente de contacto 3">
+            <h3>Clariri</h3>
+            <p>¢45.000</p>
+        </div>
+    
+        <div class="lente-card wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s" onclick="abrirLightbox('img/lentecontacto4.png')">
+            <img src="img/lentecontacto4.png" alt="Lente de contacto 4">
+            <h3>ACUVUE</h3>
+            <p>¢72.000</p>
+        </div>
+    </section> 
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <img src="" alt="Imagen Lightbox">
+    </div>
+
+    
+    <section class="intro-section">
+        <h2>¿No sabes cómo colocarlo?</h2>
+        <img src="img/ilustracion.png.png" alt="Ilustración">
+        <div class="youtube-container">
+            <iframe width="93" height="52" src="https://www.youtube.com/embed/304gT752ZT0" title="Como poner lentes de contacto 👁, FÁCIL Y RÁPIDO🏃🏼‍♂️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+
+
+        <script src="js/lentecontacto.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+
+    <script src="js/lentecontacto.js"></script>
+</body>
+</html>
